@@ -1,0 +1,29 @@
+{
+    "packages": [
+        "openjdk25",
+        "git",
+        "zip",
+        "unzip",
+        "which",
+        "coreutils",
+        "bash",
+        "gnumake",
+        "jdt-language-server",
+        "lombok@latest"
+    ],
+    "env": {
+        "PATH": "{{ .Devbox.Packages.bash }}/bin:{{ .Devbox.Packages.coreutils }}/bin:{{ .Devbox.Packages.gnumake }}/bin:$PATH:{{ .Devbox.Shell.PWD }}/:$PATH",
+        "GRADLE_HOME": "{{ .Devbox.Shell.PWD }}/gradle",
+        "GRADLE_WRAPPER": "./gradlew",
+        "GRADLE_OPTS": "-Dorg.gradle.daemon=false"
+    },
+    "aliases": {
+        "gradle": "./gradlew"
+    },
+    "shell": {
+        "init": [
+            "echo 'Devbox shell ready — Java 25 + Gradle Wrapper'",
+            "echo 'Use ./gradlew build/test as needed'"
+        ]
+    }
+}

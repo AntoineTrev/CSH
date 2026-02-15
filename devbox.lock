@@ -1,0 +1,113 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "bash": {
+      "resolved": "github:NixOS/nixpkgs/ae67888ff7ef9dff69b3cf0cc0fbfbcd3a722abe#bash",
+      "source": "nixpkg"
+    },
+    "coreutils": {
+      "resolved": "github:NixOS/nixpkgs/ae67888ff7ef9dff69b3cf0cc0fbfbcd3a722abe#coreutils",
+      "source": "nixpkg"
+    },
+    "git": {
+      "resolved": "github:NixOS/nixpkgs/ae67888ff7ef9dff69b3cf0cc0fbfbcd3a722abe#git",
+      "source": "nixpkg"
+    },
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2026-02-06T12:24:04Z",
+      "resolved": "github:NixOS/nixpkgs/ae67888ff7ef9dff69b3cf0cc0fbfbcd3a722abe?lastModified=1770380644"
+    },
+    "gnumake": {
+      "resolved": "github:NixOS/nixpkgs/ae67888ff7ef9dff69b3cf0cc0fbfbcd3a722abe#gnumake",
+      "source": "nixpkg"
+    },
+    "jdt-language-server": {
+      "resolved": "github:NixOS/nixpkgs/ae67888ff7ef9dff69b3cf0cc0fbfbcd3a722abe#jdt-language-server",
+      "source": "nixpkg"
+    },
+    "lombok@latest": {
+      "last_modified": "2026-01-23T17:20:52Z",
+      "resolved": "github:NixOS/nixpkgs/a1bab9e494f5f4939442a57a58d0449a109593fe#lombok",
+      "source": "devbox-search",
+      "version": "1.18.42",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/znm9pqyba6nddp2jhvk9aam6k5g1pzfn-lombok-1.18.42",
+              "default": true
+            },
+            {
+              "name": "bin",
+              "path": "/nix/store/adspbcjvivpch04lc6v79a0wi01h3q2b-lombok-1.18.42-bin",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/znm9pqyba6nddp2jhvk9aam6k5g1pzfn-lombok-1.18.42"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3y3yi272bikqna7gv7rnba3c8jr4b6qm-lombok-1.18.42",
+              "default": true
+            },
+            {
+              "name": "bin",
+              "path": "/nix/store/3rrvb2llb29pyrpd47iy0505pcsqzy4m-lombok-1.18.42-bin",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/3y3yi272bikqna7gv7rnba3c8jr4b6qm-lombok-1.18.42"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/igdjjj5qwqsslri0hjd49qg6210gvs12-lombok-1.18.42",
+              "default": true
+            },
+            {
+              "name": "bin",
+              "path": "/nix/store/mv93nq9slg9r7jbv3dbj10slrc7knmak-lombok-1.18.42-bin",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/igdjjj5qwqsslri0hjd49qg6210gvs12-lombok-1.18.42"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wg9dlg54l49p656ymx3g54cc8xg23rb9-lombok-1.18.42",
+              "default": true
+            },
+            {
+              "name": "bin",
+              "path": "/nix/store/605zlkmmc8d6pvvv1cgw4ki63abszrgi-lombok-1.18.42-bin",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/wg9dlg54l49p656ymx3g54cc8xg23rb9-lombok-1.18.42"
+        }
+      }
+    },
+    "openjdk25": {
+      "resolved": "github:NixOS/nixpkgs/ae67888ff7ef9dff69b3cf0cc0fbfbcd3a722abe#openjdk25",
+      "source": "nixpkg"
+    },
+    "unzip": {
+      "resolved": "github:NixOS/nixpkgs/ae67888ff7ef9dff69b3cf0cc0fbfbcd3a722abe#unzip",
+      "source": "nixpkg"
+    },
+    "which": {
+      "resolved": "github:NixOS/nixpkgs/ae67888ff7ef9dff69b3cf0cc0fbfbcd3a722abe#which",
+      "source": "nixpkg"
+    },
+    "zip": {
+      "resolved": "github:NixOS/nixpkgs/ae67888ff7ef9dff69b3cf0cc0fbfbcd3a722abe#zip",
+      "source": "nixpkg"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Group": "FayDoom",
+  "Name": "CSHPlugin",
+  "Version": "1.0.0",
+  "Description": "A mod to cast spell by hand",
+  "Authors": [
+    {
+      "Name": "FayDoom"
+    }
+  ],
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "Main": "com.faydoom.csh.CSHPlugin",
+  "IncludesAssetPack": true
+}
