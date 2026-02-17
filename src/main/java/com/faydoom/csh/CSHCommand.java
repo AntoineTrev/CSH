@@ -1,4 +1,4 @@
-package com.csh.plugin;
+package com.faydoom.csh;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;

@@ -1,8 +1,11 @@
-package com.csh.plugin;
+package com.faydoom.csh;
 
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
+import com.hypixel.hytale.server.core.util.Config;
+
+import com.faydoom.csh.config.CSHConfig;
 
 import javax.annotation.Nonnull;
 import java.util.logging.Level;
@@ -17,6 +20,7 @@ import java.util.logging.Level;
  */
 public class CSHPlugin extends JavaPlugin {
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
+    private final Config<CSHConfig> config = this.withConfig("config", CSHConfig.CODEC);
 
     public CSHPlugin(@Nonnull JavaPluginInit init) {
         super(init);
@@ -28,12 +32,16 @@ public class CSHPlugin extends JavaPlugin {
         super.setup();
         this.getCommandRegistry().registerCommand(new CSHCommand("hello", "An example command", false));
         LOGGER.at(Level.INFO).log("Setting up plugin " + this.getName());
+        config.save();
     }
 
     @Override
     protected void start() {
         super.start();
-        LOGGER.at(Level.INFO).log("Plugin has started!");
+        CSHConfig cshconfig = this.config.get();
+        LOGGER.at(Level.INFO).log("Plugin has started!" + cshconfig.getSomeString());
+        cshconfig.setSomeValue(999);
+        this.config.save();
     }
  
     @Override
